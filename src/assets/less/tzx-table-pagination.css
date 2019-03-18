@@ -1,0 +1,370 @@
+/* 表格容器 */
+.tzx-table-container {
+    padding: 20px;
+}
+.tzx-table-container .el-table{
+    border-radius: 3px 3px 0 0;
+    min-height: 360px;
+}
+.tzx-table-container .el-table .el-table__body-wrapper {
+    min-height: 319px;
+}
+.tzx-table-container thead tr{
+    background: #F7F9FB;
+}
+.tzx-table-container th {
+    padding: 0;
+}
+/* .tzx-table-container th:first-of-type{ */
+.tzx-table-container th{
+    padding-left: 14px;
+}
+.tzx-table-container th:last-of-type {
+    padding-right: 14px;
+}
+.tzx-table-container th .cell{
+    padding: 0;
+    height: 40px;
+    font-family: "PingFangSC-Medium","微软雅黑";
+    font-size: 12px;
+    color: #243546;
+    line-height: 40px;
+}
+.tzx-table-container th .cell .caret-wrapper {
+    height: 10px;
+    position: static;
+}
+.tzx-table-container th .cell .caret-wrapper i{
+    font-size: 12px;
+}
+.tzx-table-container th .cell .caret-wrapper i.ascending{
+    top: 11px;
+}
+.tzx-table-container th .cell .caret-wrapper i.descending{
+    bottom: 11px;
+}
+.tzx-table-container td {
+    padding: 0;
+    height: 30px;
+    padding: 10px 0;
+    
+    /* line-height: 30px; */
+}
+/* .tzx-table-container td:first-of-type{ */
+.tzx-table-container td{
+    padding-left: 14px;
+}
+.tzx-table-container td .cell {
+    font-family: "PingFangSC-Regular","微软雅黑";
+    font-size: 12px;
+    color: #34495E;
+    line-height: 16px;
+    /* height: 30px; */
+    padding: 0;
+}
+.tzx-table-container td .cell.el-tooltip{
+    width: auto!important;
+}
+.tzx-table-container td .cell > div{
+    line-height: 15px;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.tzx-table-container td .cell a {
+    font-size: 12px;
+}
+.tzx-table-container td .cell a:hover {
+    text-decoration: underline;
+}
+.tzx-table-container td .cell .el-tag{
+    border-radius: 3px;
+    padding: 0 10px;
+    height: 22px;
+    min-width: 56px;
+
+    font-family: "PingFangSC-Regular","微软雅黑";
+    font-size: 12px;
+    
+    line-height: 20px;
+    text-align: center;
+}
+.tzx-table-container td .cell .el-tag.el-tag--success{
+    background: rgba(30,248,127,0.10);
+    border: 1px solid #9BE7BD;
+    color: #4ECF88;
+}
+.tzx-table-container td .cell .el-tag.el-tag--danger{
+    background: #FFF0F0;
+    border: 1px solid #FFB9B9;
+    color: #FF7777;
+}
+.tzx-table-container td .cell .el-button.el-button--text.el-button--small{
+    font-family: "PingFangSC-Regular","微软雅黑";
+    font-size: 12px;
+    color: #0C9AFF;
+    border: none;
+    /* line-height: 16px; */
+}
+.tzx-table-container td:last-of-type {
+    padding-right: 14px;
+}
+.tzx-table-container td:last-of-type .cell{
+    /* background-color: yellow; */
+    /* padding: 0 14px; */
+    /* text-align: center; */
+}
+.tzx-table-container .el-table .el-table__fixed-right{
+    /* box-shadow: 0 0 20px rgba(0,0,0,.12); */
+}
+/* 操作列样式 */
+.tzx-table-container td.opt .cell {
+    display: flex;
+    align-items: center;
+}
+.tzx-table-container td .cell .el-dropdown .el-button {
+    margin-left: 10px;
+}
+/* 小型下拉菜单样式 */
+.el-dropdown-menu.el-popper.el-dropdown-menu--small{
+    margin-top: 0px;
+}
+.el-dropdown-menu.el-popper.el-dropdown-menu--small .el-dropdown-menu__item {
+    font-size: 12px;
+    line-height: 28px;
+    font-family: "PingFangSC-Regular","微软雅黑";
+    color: #0C9AFF;
+}
+.el-dropdown-menu.el-popper.el-dropdown-menu--small .el-dropdown-menu__item:hover {
+    text-decoration: underline;
+    color: #108EE9;
+}
+/* 按钮样式 */
+.tzx-table-container .el-button.el-button--text.el-button--small:hover {
+    text-decoration: underline;
+    color: #108EE9;
+}
+
+/* 过滤器样式 */
+.el-table-filter{
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.20);
+    border-radius: 3px;
+    width: 100px;
+    margin: -10px;
+    max-height: 175px;
+    overflow-y: auto;
+}
+.el-table-filter .el-table-filter__list{
+    padding: 0;
+}
+.el-table-filter .el-table-filter__list .el-table-filter__list-item {
+    font-family: "PingFangSC-Regular","微软雅黑";
+    font-size: 12px;
+    color: #34495E;
+    line-height: 24px;
+    padding: 0 8px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.el-table-filter .el-table-filter__list .el-table-filter__list-item.is-active {
+    background: #F2F6FB;
+}
+
+/* 空数据 */
+.tzx-table-container .el-table__body-wrapper .el-table__empty-block {
+    position: absolute;
+}
+.tzx-table-container .el-table__empty-text {
+    background-image: url(../images/no-data.png);
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.tzx-table-container .el-table__empty-text::before {
+    position: absolute;
+    content: '暂无任何数据';
+    display: inline-block;
+    bottom: -22px;
+    font-family: "PingFangSC-Regular", "微软雅黑";
+    font-size: 14px;
+    color: #6D7D8D;
+}
+
+/* 后期增加，下面有一条线 */
+.tzx-table-container .el-table.el-table--fit.el-table--enable-row-hover.el-table--enable-row-transition::before{
+    display: none;
+}
+
+/* 分页 */
+.tzx-pagination-container {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.tzx-pagination-container .el-pagination{
+    padding: 0;
+}
+.tzx-pagination-container .btn-prev,
+.tzx-pagination-container .btn-next{
+    background: #FFFFFF!important;
+    border: 1px solid #D8E5EC;
+    border-radius: 3px;
+    width: 64px;
+    height: 28px;
+    font-family: "PingFangSC-Regular","微软雅黑";
+    font-size: 12px;
+    color: #34495E;
+    line-height: 28px;
+    margin: 0!important;
+    margin-right: 6px!important;
+}
+.tzx-pagination-container .btn-prev.disabled{}
+.tzx-pagination-container .el-pager{
+    margin-right: 6px!important;
+}
+.tzx-pagination-container .el-pager .number{
+    background: #FFFFFF!important;
+    border: 1px solid #D8E5EC;
+    width: 28px!important;
+    min-width: 28px!important;
+    height: 28px!important;
+    line-height: 28px!important;
+    text-align: center;
+    font-family: "PingFangSC-Regular","微软雅黑";
+    font-size: 12px;
+    color: #34495E!important;
+    font-weight: 300;
+    margin: 0!important;
+    padding: 0;
+    border-radius: 0!important;
+    margin-right: -1px!important;
+
+    /* margin: 0 5px; */
+    /* background-color: #f4f4f5; */
+    /* color: #606266; */
+    /* min-width: 30px; */
+    /* border-radius: 2px; */
+}
+.tzx-pagination-container .el-pager .number.active{
+    color: #FFFFFF!important;
+    background: #0C9AFF!important;
+}
+.tzx-pagination-container .el-pager .number:first-of-type{
+    border-radius: 3px 0 0 3px!important;
+}
+.tzx-pagination-container .el-pager .number:last-of-type{
+    border-radius: 0 3px 3px 0!important;
+}
+.tzx-pagination-container .el-pager .more{
+    border: none;
+    padding: 0;
+    margin: 0!important;
+    width: 22px!important;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    background-color: #fff!important;
+    margin-left: 1px!important;
+}
+.tzx-pagination-container .el-pager .more::before{
+    font-size: 12px;
+    color: #34495E;
+}
+.tzx-pagination-container .btn-next{}
+.tzx-pagination-container .el-pagination__total{
+    font-family: "PingFangSC-Regular","微软雅黑";
+    font-size: 12px;
+    color: #9AABB8;
+    margin-right: 12px!important;
+}
+.tzx-pagination-container .el-pagination__jump{
+    margin: 0!important;
+    margin-right: 12px!important;
+}
+.tzx-pagination-container .el-pagination__jump .el-pagination__editor{
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin: 0 6px;
+}
+.tzx-pagination-container .el-pagination__jump .el-pagination__editor .el-input__inner { 
+   margin: 0;
+   padding: 0; 
+   border: none;
+
+   background: #FFFFFF;
+   border: 1px solid #D8E5EC;
+   border-radius: 3px;
+   width: 48px;
+   height: 28px;
+}
+.tzx-pagination-container .el-pagination__sizes{
+    margin: 0;
+}
+.tzx-pagination-container .el-pagination__sizes .el-select{}
+.tzx-pagination-container .el-pagination__sizes .el-select .el-input.el-input--suffix{
+    margin: 0;
+    width: 83px;
+}
+.tzx-pagination-container .el-pagination__sizes .el-select .el-input.el-input--suffix .el-input__inner{
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    background: #FFFFFF;
+    border: 1px solid #D8E5EC;
+    border-radius: 3px;
+    width: 83px;
+    height: 28px;
+
+    font-family: "PingFangSC-Regular","微软雅黑";
+    font-size: 12px;
+    color: #34495E;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 0;
+}
+.tzx-pagination-container .el-pagination__sizes .el-select .el-input.el-input--suffix .el-input__suffix {
+    right: 8px;
+}
+.tzx-pagination-container .el-pagination__sizes .el-select .el-input.el-input--suffix .el-input__suffix .el-input__suffix-inner{}
+.tzx-pagination-container .el-pagination__sizes .el-select .el-input.el-input--suffix .el-input__suffix .el-input__suffix-inner i{}
+
+/* 分页：补充 */
+.el-select-dropdown.el-popper .el-select-dropdown__item  {
+    font-size: 12px;
+}
+
+/* 提示框样式 */
+.el-tooltip__popper.is-light{
+    background: #FFFFFF;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.20);
+    border-radius: 3px;
+    border: none;
+    padding: 12px;
+    max-width: 290px;
+    margin-bottom: -10px;
+
+    font-family: "PingFangSC-Regular","微软雅黑";
+    font-size: 12px;
+    color: #34495E;
+    line-height: 18px;
+}
+.el-tooltip__popper.is-light[x-placement^=top] .popper__arrow {
+    border-top-color: rgba(0,0,0,0.20);
+}
+
+/* 普通popper特殊设置 */
+.el-tooltip__popper.is-light.common-popper {
+    margin-bottom: 7px!important
+}
+

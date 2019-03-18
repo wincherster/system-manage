@@ -1,0 +1,9 @@
+/build/
+/config/
+/dist/
+/*.js
+/*.vue
+/test/unit/coverage/
+/test/unit/tests/doc/
+/src/components/text-editor/
+/src/assets/js/

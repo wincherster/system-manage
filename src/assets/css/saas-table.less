@@ -1,0 +1,227 @@
+#iegalManage, #priceManage, #cuisinemaitnt, #personPosition, #personmanage, .storesetting-outer, .systemdictionary-outer, .provice-outer {
+  .input-with-select.el-input.el-input-group.el-input-group--prepend.el-input--suffix {
+    .el-input-group__prepend {
+      border-radius: 3px 0 0 3px;
+      background: #FFFFFF;
+      border: none;
+      padding: 0;
+      .el-select {
+        margin: 0;
+        .el-input.el-input--suffix {
+          width: 64px;
+          height: 28px;
+          .el-input__inner {
+            font-size: 12px;
+            color: #34495E;
+            line-height: 28px;
+            padding: 8px 0 8px 8px;
+            height: 28px;
+            border: 1px solid #D8E5EC;
+            border-right: none;
+            border-radius: 3px 0 0 3px;
+          }
+          .el-input__suffix {
+            top: 4px;
+            right: 5px;
+            .el-input__suffix-inner {
+              .el-select__caret.el-input__icon.el-icon-arrow-up {
+                height: 12px;
+                width: 12px;
+                line-height: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+    input.el-input__inner {
+      height: 28px;
+      padding: 0 22px 0 8px;;
+      &:focus {
+        border-color: #d8dce5;
+      }
+      &:hover {
+        border-color: #d8dce5;
+      }
+    }
+    .el-input__suffix {
+      right: 0;
+      .el-input__suffix-inner {
+        .el-button.el-button--default {
+          padding: 0;
+          width: 32px;
+          height: 100%;
+          border-left: none;
+          border-radius: 0 3px 3px 0;
+        }
+      }
+    }
+  }
+  .el-table {
+    .el-table__header-wrapper {
+      .el-table__header {
+        .has-gutter {
+          .el-table-header {
+            background: #F7F9FB;
+            border-radius: 3px 3px 0 0;
+          }
+          tr {
+            border-color: #F3F3F3;
+            th {
+              padding: 0;
+              background: #F7F9FB;
+              border-color: #F3F3F3;
+              .caret-wrapper {
+                position: absolute;
+                top: 4px;
+              }
+              & > .cell {
+                padding: 0 14px;
+                font-size: 12px;
+                color: #243546;
+                line-height: 39px;
+                height: 39px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                &.thirdPhone{
+                  border-right: 1px solid #F3F3F3;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .el-table__body-wrapper {
+      .el-table__body {
+        .el-table__row {
+          height: 40px;
+          td {
+            padding: 0;
+            border-color: #F3F3F3;
+            & > .cell {
+              padding: 0 14px;
+              font-size: 12px;
+              color: #34495E;
+              line-height: 39px;
+              height: 39px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+              > div {
+                height: 100%;
+                line-height: 39px;
+                text-align: center;
+              }
+              & > .el-tag {
+                font-size: 12px;
+                line-height: 12px;
+                padding: 5px 10px;
+                border: 1px solid;
+                border-radius: 3px;
+                height: 24px;
+              }
+              .el-tag--success {
+                border-color: #9BE7BD;
+                color: #4ECF88;
+                background: rgba(30, 248, 127, 0.10);
+              }
+              .el-tag--danger {
+                background: #FFF0F0;
+                border-color: #FFB9B9;
+                color: #FF7777;
+              }
+              .showTip {
+                color: #0C9AFF;
+                cursor: pointer;
+                position: relative;
+                height: 100%;
+                line-height: 39px;
+                text-align: left;
+                text-overflow: ellipsis;
+                &:focus {
+                  outline: none;
+                }
+                &:hover {
+                  text-decoration-line: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .el-table__fixed-right {
+      .el-table__fixed-header-wrapper {
+        .el-table__header {
+          background: #F7F9FB;
+          border-radius: 3px 3px 0 0;
+          thead {
+            tr {
+              th {
+                padding: 0;
+                background: #F7F9FB;
+                border-color: #F3F3F3;
+                .cell {
+                  padding: 0 14px;
+                  font-size: 12px;
+                  color: #243546;
+                  line-height: 39px;
+                  height: 39px;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+        }
+      }
+      .el-table__fixed-body-wrapper {
+        .el-table__body {
+          tbody {
+            tr {
+              td {
+                padding: 0;
+                border-color: #F3F3F3;
+                .cell {
+                  padding: 0 14px;
+                  font-size: 12px;
+                  color: #34495E;
+                  line-height: 39px;
+                  height: 39px;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .el-table--border .has-gutter td:nth-last-of-type(2), .el-table--border .has-gutter th:nth-last-of-type(2) {
+      border-right: 1px solid #e6ebf5;
+    }
+  }
+}
+.el-tooltip__popper.is-islight {
+  position: absolute;
+  background: #fff;
+  min-width: 20px;
+  max-width: 600px;
+  border: 1px solid #e6ebf5;
+  z-index: 2000;
+  color: #5a5e66;
+  line-height: 1.4;
+  text-align: justify;
+  word-break: break-all;
+  font-size: 14px;
+  padding: 10px;
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+}
+.el-tooltip__popper.is-islight[x-placement^=top] .popper__arrow {
+  border-top-color: #fff;
+  &:after{
+    border-top-color: #fff;
+  }
+}

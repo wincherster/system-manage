@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for views/organization/legalManage/children/editLegalManage.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">views/organization/legalManage/children</a> editLegalManage.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">6.67% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>1/15</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">28.57% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">6.67% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/15</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;style lang="less" scoped&gt;
+    @import "./editLegalManage.less";
+&lt;/style&gt;
+&lt;template&gt;
+  &lt;div class="formClass"&gt;
+    &lt;el-header&gt;新增法人类型&lt;/el-header&gt;
+    &lt;el-form :label-position="labelPosition" :model="form" :rules="rules" ref="form" label-width="128px"&gt;
+    &lt;el-row :gutter="24"&gt;
+      &lt;el-col :span="12"&gt;
+          &lt;el-form-item label="法人名称" prop="frmc"&gt;
+            &lt;el-input v-model="form.frmc" placeholder="文字长度不得大于20个字符"&gt;&lt;/el-input&gt;
+          &lt;/el-form-item&gt;
+          &lt;el-form-item label="是否开电子发票"&gt;
+            &lt;el-radio-group v-model="form.sfkfp"&gt;
+              &lt;el-radio label="是"&gt;&lt;/el-radio&gt;
+              &lt;el-radio label="否"&gt;&lt;/el-radio&gt;
+            &lt;/el-radio-group&gt;
+          &lt;/el-form-item&gt;
+          &lt;el-form-item label="发票明细" prop="fpmx"&gt;
+            &lt;el-select v-model="form.fpmx" placeholder="请选择发票明细"&gt;
+              &lt;el-option label="明细1" value="1"&gt;&lt;/el-option&gt;
+              &lt;el-option label="明细2" value="2"&gt;&lt;/el-option&gt;
+            &lt;/el-select&gt;
+          &lt;/el-form-item&gt;
+          &lt;el-form-item label="销售纳税人识别号" prop="xsnsrsbh"&gt;
+            &lt;el-input v-model="form.xsnsrsbh" placeholder="文字长度不得大于20个字符"&gt;&lt;/el-input&gt;
+          &lt;/el-form-item&gt;
+          &lt;el-form-item label="销售方电话" prop="xsfdh"&gt;
+            &lt;el-input v-model="form.xsfdh"&gt;&lt;/el-input&gt;
+          &lt;/el-form-item&gt;
+          &lt;el-form-item label="销售方地址" prop="xsfdz"&gt;
+            &lt;el-input v-model="form.xsfdz"&gt;&lt;/el-input&gt;
+          &lt;/el-form-item&gt;
+      &lt;/el-col&gt;
+      &lt;el-col :span="12" class="two"&gt;
+          &lt;el-form-item label="法人代码" prop="frdm"&gt;
+            &lt;el-input v-model="form.frdm" placeholder="文字长度不得大于20个字符"&gt;&lt;/el-input&gt;
+          &lt;/el-form-item&gt;
+          &lt;el-form-item label="电子发票对接商"&gt;
+            &lt;el-radio-group v-model="form.dzfpdjs"&gt;
+              &lt;el-radio label="用友"&gt;&lt;/el-radio&gt;
+              &lt;el-radio label="百旺电子发票"&gt;&lt;/el-radio&gt;
+              &lt;el-radio label="瑞宏"&gt;&lt;/el-radio&gt;
+            &lt;/el-radio-group&gt;
+          &lt;/el-form-item&gt;
+        &lt;el-form-item label="纳税人属性" prop="nsrsx"&gt;
+            &lt;el-select v-model="form.nsrsx" placeholder="请选择纳税人属性"&gt;
+              &lt;el-option label="纳税人属性1" value="1"&gt;&lt;/el-option&gt;
+              &lt;el-option label="纳税人属性2" value="2"&gt;&lt;/el-option&gt;
+            &lt;/el-select&gt;
+        &lt;/el-form-item&gt;
+        &lt;el-form-item label="销售方名称" prop="xsfmc"&gt;
+            &lt;el-input v-model="form.xsfmc"&gt;&lt;/el-input&gt;
+        &lt;/el-form-item&gt;
+        &lt;el-form-item label="销售方银行账号" prop="xsfyhzh"&gt;
+            &lt;el-input v-model="form.xsfyhzh"&gt;&lt;/el-input&gt;
+        &lt;/el-form-item&gt;
+      &lt;/el-col&gt;
+      &lt;el-col :span="24"&gt;
+        &lt;el-form-item label="备注"&gt;
+          &lt;el-input type="textarea" v-model="form.bz" style="width:780px;height:70px;"&gt;&lt;/el-input&gt;
+        &lt;/el-form-item&gt;
+      &lt;/el-col&gt;
+    &lt;/el-row&gt;
+    &lt;el-form-item&gt;
+      &lt;el-button @click="cancel()"&gt;取消&lt;/el-button&gt;
+      &lt;el-button @click="sendForm('form')"&gt;保存并继续&lt;/el-button&gt;
+      &lt;el-button type="primary" @click="submitForm('form')"&gt;保存&lt;/el-button&gt;
+    &lt;/el-form-item&gt;
+    &lt;/el-form&gt;
+  &lt;/div&gt;  
+&lt;/template&gt;
+&lt;script&gt;
+export default {
+  created() {
+    
+  },
+  data() {
+    return {
+      isValid:false,
+      labelPosition:"left",
+      form: {
+          frmc: '',
+          sfkfp: '是',
+          fpmx: '',
+          xsnsrsbh: '',
+          xsfdh:'',
+          xsfdz:'',
+          frdm:'',
+          dzfpdjs:'用友',
+          nsrsx:'',
+          xsfmc:'',
+          xsfyhzh:'',
+          bz: ''
+        },
+        rules: {
+          frmc: [
+            { required: true, message: '请输入活动名称', trigger: 'change' },
+            { min: 1, max: 20, message: '不得超过20个字符', trigger: 'change' }
+          ],
+          fpmx: [
+            { required: true, message: '发票明细是必填项', trigger: 'change' }
+          ],
+          xsnsrsbh: [
+            { required: true, message: '识别号是必填项', trigger: 'change' },
+            { min: 1, max: 20, message: '不得超过20个字符', trigger: 'change' }
+          ],
+          xsfdh: [
+            { required: true, message: '销售方电话是必填项', trigger: 'change' },
+            { type: 'number', message: '电话是数字'}
+          ],
+          xsfdz: [
+            { required: true, message: '销售方地址是必填项', trigger: 'change' }
+          ],
+          frdm: [
+            { required: true, message: '法人代码是必填项', trigger: 'change' },
+            { min: 1, max: 20, message: '不得超过20个字符', trigger: 'change' }
+          ],
+          nsrsx: [
+            { required: true, message: '纳税人属性是必填项', trigger: 'change' }
+          ],
+          xsfmc: [
+            { required: true, message: '销售方名称是必填项', trigger: 'change' }
+          ],
+          xsfyhzh: [
+            { required: true, message: '销售方银行账号是必填项', trigger: 'change' },
+            { type: 'number', message: '银行账号是数字'}
+          ]
+        }
+      
+    };
+  },
+  methods: {
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      submitForm:function(formName) {</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        this.$refs[formName].validate((valid) =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >          if (valid) {</span>
+<span class="cstat-no" title="statement not covered" >            this.isValid = true;</span>
+<span class="cstat-no" title="statement not covered" >            console.info(JSON.stringify(this.form));</span>
+<span class="cstat-no" title="statement not covered" >            this.$router.push('/legalManage');</span>
+          } else {
+<span class="cstat-no" title="statement not covered" >            console.log('error submit!!');</span>
+<span class="cstat-no" title="statement not covered" >            return false;</span>
+          }
+        });
+      },
+<span class="fstat-no" title="function not covered" >      sendForm:function(formName){</span>
+<span class="cstat-no" title="statement not covered" >        this.submitForm(formName);</span>
+<span class="cstat-no" title="statement not covered" >        this.resetForm(formName);</span>
+<span class="cstat-no" title="statement not covered" >        this.$router.push('/legalManage');</span>
+      },
+<span class="fstat-no" title="function not covered" >      resetForm:function(formName) {</span>
+<span class="cstat-no" title="statement not covered" >        if(this.isValid){</span>
+<span class="cstat-no" title="statement not covered" >          this.$refs[formName].resetFields();</span>
+        }
+      },
+<span class="fstat-no" title="function not covered" >      cancel:function(){</span>
+<span class="cstat-no" title="statement not covered" >        this.$router.push('/legalManage');</span>
+      }
+  }
+};
+&lt;/script&gt;
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 04 2017 09:57:46 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

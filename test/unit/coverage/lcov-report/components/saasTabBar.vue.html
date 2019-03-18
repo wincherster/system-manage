@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for components/saasTabBar.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">components</a> saasTabBar.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">14.71% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>5/34</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">27.27% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">14.71% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>5/34</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+    &lt;div class='nav-tabs'&gt;
+        &lt;span class="prev" &gt;&lt;i class="iconfont icon-zuofanye"&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;span class="next" &gt;&lt;i class="iconfont icon-youfanye"&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;el-tabs
+            v-model='activeTabValue'
+            @tab-remove="removeTab"
+            @tab-click="changeActiveTab"
+            closable&gt;
+            &lt;el-tab-pane label='首页' name='0' class='home'&gt;&lt;/el-tab-pane&gt;
+            &lt;el-tab-pane  v-for='(item, index) in navTabs' :key='index' :label='item.title' :name='item.code'&gt;
+            &lt;/el-tab-pane&gt;
+                {{getNavTabs}}
+        &lt;/el-tabs&gt;
+&nbsp;
+         &lt;el-dropdown @command="handleCommand"&gt;
+          &lt;span class="el-dropdown-link"&gt;
+            &lt;i class="iconfont icon-weixuan-suolvegongnengxiala"&gt;&lt;/i&gt;
+          &lt;/span&gt;
+          &lt;el-dropdown-menu slot="dropdown"&gt;
+            &lt;el-dropdown-item command='closeall'&gt;
+                &lt;i class="iconfont icon-guanbisuoyou"&gt;&lt;/i&gt;&lt;span&gt;关闭所有&lt;/span&gt;
+            &lt;/el-dropdown-item&gt;
+            &lt;el-dropdown-item command='reload'&gt;
+                &lt;i class="iconfont icon-shuaxin"&gt;&lt;/i&gt;&lt;span&gt;刷新&lt;/span&gt;
+            &lt;/el-dropdown-item&gt;
+            &lt;el-dropdown-item&gt;
+                &lt;full-screen v-model="isFullScreen"&gt;&lt;/full-screen&gt;
+            &lt;/el-dropdown-item&gt;
+          &lt;/el-dropdown-menu&gt;
+        &lt;/el-dropdown&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import fullScreen from '@/components/fullscreen.vue';
+<span class="fstat-no" title="function not covered" >function getStyle(tag, attr) {</span>
+<span class="cstat-no" title="statement not covered" >  if (tag.currentStyle) {</span>
+<span class="cstat-no" title="statement not covered" >    return tag.currentStyle[attr];</span>
+  } else {
+<span class="cstat-no" title="statement not covered" >    return getComputedStyle(tag, null)[attr];</span>
+  }
+}
+export default {
+  created() {
+    this.activeTabValue = this.$store.getters.getActiveTabValue;
+  },
+  data() {
+    return {
+      activeTabValue: "",
+      navTabs: [],
+      isFullScreen: false
+    };
+  },
+  methods: {
+<span class="fstat-no" title="function not covered" >    removeTab(targetTabValue) {</span>
+<span class="cstat-no" title="statement not covered" >      this.$store.dispatch("removeTab", targetTabValue);</span>
+<span class="cstat-no" title="statement not covered" >      localStorage.setItem("navTabs",JSON.stringify(this.$store.state.navTabs));</span>
+    },
+<span class="fstat-no" title="function not covered" >    changeActiveTab(targetTab) {</span>
+<span class="cstat-no" title="statement not covered" >      this.$store.dispatch("changeActiveTab", targetTab.name);</span>
+    },
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >    handleCommand(command) {</span></span>
+<span class="cstat-no" title="statement not covered" >      if (command === "closeall") {</span>
+<span class="cstat-no" title="statement not covered" >        this.$store.dispatch("removeAllTab");</span>
+        
+<span class="cstat-no" title="statement not covered" >      } else if (command === "reload") {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        var activeTab = this.navTabs.find(item =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >          return item.code == this.activeTabValue;</span>
+        });
+<span class="cstat-no" title="statement not covered" >        if (activeTab) {</span>
+<span class="cstat-no" title="statement not covered" >          this.$router.push({ path: activeTab.router });</span>
+<span class="cstat-no" title="statement not covered" >          this.$store.dispatch("changeActiveTab", activeTab.code);</span>
+        }
+<span class="cstat-no" title="statement not covered" >      } else if (command === "fullscreen") {</span>
+<span class="cstat-no" title="statement not covered" >        this.$store.dispatch("setFullscreenMode", true);</span>
+<span class="cstat-no" title="statement not covered" >      } else if (command === "exitfullscreen") {</span>
+<span class="cstat-no" title="statement not covered" >        this.$store.dispatch("setFullscreenMode", false);</span>
+      }
+    }
+  },
+  computed: {
+    getNavTabs() {
+      this.navTabs = null;
+      let arrs = this.$store.getters.getNavTabs;
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      arrs.forEach(function(item,index,arr){</span></span>
+<span class="cstat-no" title="statement not covered" >        if(item.title =="首页"){</span>
+<span class="cstat-no" title="statement not covered" >          arr.splice(index,1);</span>
+        }
+      })
+<span class="cstat-no" title="statement not covered" >      this.navTabs = arrs ;</span>
+<span class="cstat-no" title="statement not covered" >      this.activeTabValue = this.$store.getters.getActiveTabValue;</span>
+    }
+   
+  },
+  watch: {
+<span class="fstat-no" title="function not covered" >    activeTabValue(newValue, oldValue) {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      let activeTab = this.navTabs.find(item =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >        return item.code === newValue;</span>
+      });
+<span class="cstat-no" title="statement not covered" >      if (activeTab) {</span>
+<span class="cstat-no" title="statement not covered" >        this.$router.push({ path: activeTab.router }); //跳转路由</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >        this.$router.push({ path: "/index" });</span>
+      }
+    }
+  },
+  components:{
+    "fullScreen":fullScreen
+  }
+};
+&lt;/script&gt;
+&lt;style scoped&gt;
+    .nav-tabs{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+.nav-tabs .prev,
+.nav-tabs .next {
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 36px;
+  z-index: 0;
+  text-align: center;
+  cursor: pointer;
+}
+.nav-tabs .prev {
+  left: 0;
+}
+.nav-tabs .next {
+  right: 28px;
+}
+&nbsp;
+.nav-tabs .prev .iconfont,
+.nav-tabs .next .iconfont {
+  font-size: 12px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -8px;
+  margin-left: -8px;
+  color: #9aabb8;
+}
+&nbsp;
+.nav-tabs &gt; .el-dropdown {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  margin-top: -8px;
+  width: 16px;
+  height: 36px;
+  text-align: center;
+  margin: 0;
+}
+.nav-tabs &gt; .el-dropdown &gt; .el-dropdown-link &gt; .iconfont {
+  color: #9aabb8;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -8px;
+  margin-left: -6px;
+}
+&nbsp;
+.el-dropdown-menu.el-popper {
+  background: #fefefe;
+  border: 1px solid #e8eff4;
+  box-shadow: 0 0 8px 0 rgba(33, 41, 50, 0.06);
+  border-radius: 6px 0 0 0 6px 6px 6px;
+  top: 75px;
+  width: 110px;
+  height: 125px;
+}
+.el-dropdown-menu.el-popper &gt; .el-dropdown-menu__item {
+  line-height: 32px;
+  height: 32px;
+  padding: 0 !important;
+  padding-left: 18px !important;
+}
+.el-dropdown-menu.el-popper &gt; .el-dropdown-menu__item:focus,
+.el-dropdown-menu.el-popper &gt; .el-dropdown-menu__item:not(.is-disabled):hover {
+  background: #f2f6fb;
+}
+.el-dropdown-menu.el-popper &gt; .el-dropdown-menu__item &gt; .iconfont {
+  vertical-align: middle;
+  font-family: "PingFangSC-Regular";
+  font-size: 16px;
+  color: #34495e;
+}
+.el-dropdown-menu.el-popper &gt; .el-dropdown-menu__item &gt; span {
+  vertical-align: middle;
+  font-family: "PingFangSC-Regular";
+  font-size: 12px;
+  color: #34495e;
+  padding-left: 8px;
+}
+&lt;/style&gt;
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 04 2017 09:57:46 GMT+0800 (CST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

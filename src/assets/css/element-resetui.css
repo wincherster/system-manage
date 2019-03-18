@@ -1,0 +1,75 @@
+.v-modal {
+  opacity: 0.5;
+  background: #000000;
+}
+.el-message-box {
+  width: 360px;
+  height: 200px;
+  padding: 0;
+  border: none;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.20);
+}
+.el-message-box__header {
+  height: 50px;
+  padding: 0 30px;
+}
+.el-message-box__title {
+  line-height: 50px;
+}
+.el-message-box__content {
+  height: 78px;
+  padding: 0 30px;
+}
+.el-message-box__status {
+  top: 0px;
+  -webkit-transform: none;
+  transform: none;
+}
+.el-icon-error:before {
+  font-family: 'saas'!important;
+  content: "\e935";
+  color: #ff4761;
+}
+.el-icon-success:before {
+  font-family: 'saas'!important;
+  content: "\e937";
+  color: #72c557;
+}
+.el-icon-info:before {
+  font-family: 'saas'!important;
+  content: "\e936";
+  color: #0c9aff;
+}
+.el-icon-warning:before {
+  font-family: 'saas'!important;
+  content: "\e938";
+  color: #ffbf00;
+}
+.el-message-box__status+.el-message-box__message {
+  padding-left: 34px;
+  font-size: 16px;
+  color: #34495E;
+  line-height:24px;
+}
+.el-message-box__btns {
+  padding: 20px 30px;
+}
+.el-message {
+  min-width: 0px;
+  top: 50%;
+  left: 50%;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.69);
+  border-radius: 4px;
+  border: none;
+}
+.el-message__icon {
+  margin-right: 6px;
+  font-size:16px;
+}
+.el-message .el-message__content {
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 14px;
+}

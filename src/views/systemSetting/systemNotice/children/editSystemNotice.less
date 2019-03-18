@@ -1,0 +1,46 @@
+.add-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  .add-header {
+    width: 100%;
+    height: 42px;
+    background: #FFFFFF;
+    padding: 10px 0 10px 16px;
+    h3 {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      color: #243546;
+      line-height: 22px;
+    }
+  }
+  .line {
+    width: 100%;
+    height: 10px;
+    opacity: 0.03;
+    background-image: linear-gradient(-180deg, #434C94 0%, #FFFFFF 100%);
+  }
+  .add-body {
+    flex: 1;
+    width: 100%;
+    position: relative;
+    .add-main {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      overflow: auto;
+      padding: 0 16px;
+      .form-container {
+        width: 100%;
+        background-color: #fff;
+        padding: 12px 0 32px 0;
+        border-bottom: 1px solid #EAF1F6;
+      }
+    }
+  }
+}

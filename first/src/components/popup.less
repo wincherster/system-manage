@@ -1,0 +1,251 @@
+.transfer {
+  .el-dialog__wrapper {
+    .el-dialog.addFunction {
+      width: 800px;
+      height: 590px;
+      margin: 0 auto;
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      .el-dialog__header {
+        background: #FFFFFF;
+        border-bottom: 1px solid #EAEFF4;
+        height: 46px;
+        width: 100%;
+        padding: 14px 13px 14px 30px;
+        border-radius: 3px;
+        box-sizing: border-box;
+        .el-dialog__title {
+          line-height: 17px;
+          font-family: PingFangSC-Regular;
+          font-size: 16px;
+          color: #3A4159;
+          vertical-align: top;
+        }
+      }
+      .el-dialog__body {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        .dialog-content {
+          flex: 1;
+          width: 100%;
+          padding: 0;
+          overflow: hidden;
+          display: flex;
+          .left-side {
+            width: 540px;
+            height: 100%;
+            border-right: 1px solid #EAEFF4;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            overflow-y: auto;
+            box-sizing: border-box;
+            .el-tabs.el-tabs--top {
+              height: 39px;
+              width: 100%;
+              .el-tabs__header {
+                height: 100%;
+                .el-tabs__nav-wrap {
+                  height: 100%;
+                  .el-tabs__nav-prev, .el-tabs__nav-next {
+                    line-height: 39px;
+                  }
+                  .el-tabs__nav-scroll {
+                    height: 100%;
+                    .el-tabs__nav {
+                      height: 100%;
+                        .el-tabs__item{
+                          height: 100%;
+                          line-height: 39px;
+                          padding: 0 30px;
+                        }
+                      .el-tabs__item:nth-child(2) {
+                        padding-left: 10px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .blow-content {
+              flex: 1;
+              overflow-x: hidden;
+              overflow-y: auto;
+              padding: 7px 0 0 30px;
+              .tab-detail {
+                margin-top: 20px;
+                border-bottom: 1px dashed #EAEFF4;
+                padding-bottom: 14px;
+                box-sizing: border-box;
+                .title {
+                  font-family: PingFangSC-Regular;
+                  font-size: 14px;
+                  color: #243546;
+                  line-height: 20px;
+                }
+                .detail {
+                  margin-left: -14px;
+                  .el-button {
+                    width: 100px;
+                    height: 28px;
+                    padding: 0;
+                    text-align: center;
+                    margin:8px 0 0 14px;
+                    font-family: PingFangSC-Regular;
+                    font-size: 12px;
+                    color: #34495E;
+                  }
+                }
+              }
+            }
+          }
+          .right-side {
+            width: 258px;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            .right-title {
+              font-family: PingFangSC-Regular;
+              font-size: 14px;
+              color: #3A4159;
+              line-height: 14px;
+              margin: 0;
+              padding: 0;
+            }
+            .el-tag {
+              margin-top: 18px;
+              width: 100px;
+              height: 28px;
+              background: #FDFEFF;
+              border: 1px solid #D8E5EC;
+              border-radius: 3px;
+              line-height: 26px;
+              text-align: center;
+              color: #34495E;
+              position: relative;
+              padding: 0;
+              &:nth-child(2n) {
+                margin-right: 14px;
+              }
+              .el-tag__close {
+                position: absolute;
+                top: -6px;
+                right: -6px;
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                line-height: 12px;
+                background: #BDCCD7;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+        .btn {
+          height: 64px;
+          width: 100%;
+          background: #F4F9FC;
+          border-radius: 3px;
+          display: flex;
+          justify-content: center;
+          padding-top: 16px;
+          box-sizing: border-box;
+          .el-button {
+            height: 28px;
+            line-height: 28px;
+            padding: 0 14px;
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+            border: 1px solid #D8E5EC;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+  }
+  .banner{
+    .editPwd{
+      .el-dialog__wrapper{
+        .el-dialog{
+          border-radius: 4px;
+          width: 40%;
+          .el-dialog__header{
+            padding: 14px 30px 14px;
+            height: 46px;
+            border-bottom: 1px solid #EAF1F6;
+            .el-dialog__title{
+              font-size: 16px;
+              color: #3A4159;
+              letter-spacing: 0;
+              font-family: PingFangSC-Regular;
+              line-height: 19px;
+              vertical-align: top;
+            }
+          }
+          .el-dialog__body{
+            padding: 20px 30px 0px;
+            .el-form{
+              .el-form-item{
+                margin-bottom: 18px;
+                .el-form-item__label{
+                  text-align: left;
+                  position: relative;
+                  padding: 0;
+                  line-height: 32px;
+                  font-family: PingFangSC-Regular;
+                  font-size: 14px;
+                  color: #576D7A;
+                  &:before{
+                    position: absolute;
+                    left: -12px;
+                    top: 2px;
+                    margin: 0;
+                  }
+                }
+                .el-form-item__content{
+                  line-height: 32px;
+                  .el-input{
+                    .el-input__inner{
+                      height: 32px;
+                      font-size: 14px;
+                      color: #3A4C5F;
+                      line-height: 14px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .el-dialog__footer{
+            padding: 0;
+            height: 56px;
+            line-height: 56px;
+            text-align: center;
+            background: #F4F9FC;
+            .dialog-footer{
+              .el-button{
+                padding: 8px 20px;
+                margin: 0 5px;
+                >span{
+                  font-size: 12px;
+                  color: #34495E;
+                  line-height: 12px;
+                  font-weight: normal;
+                }
+                &.el-button--primary{
+                  >span{
+                    color: #FFFFFF;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

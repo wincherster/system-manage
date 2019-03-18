@@ -1,0 +1,70 @@
+.timeTask {
+  display:flex;
+  [v-cloak] {
+    display: none;
+  }
+  .shade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 888;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .myDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 340px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(106,134,179,0.22);
+    z-index: 889;
+    display: flex;
+    flex-direction: column;
+    .title {
+      height: 46px;
+      padding-left: 20px;
+      line-height: 46px;
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: #243546;
+      font-weight: 500;
+      position: relative;
+      background: rgba(240,245,249,0.53);
+      .iconfont {
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 14px;
+        color: #243546;
+        text-align: center;
+        position: absolute;
+        top: 12px;
+        right: 14px;
+      }
+    }
+    .container{
+      flex:1;
+      overflow: auto;
+      .content{
+        padding: 20px 20px 0;
+        background-color: #fff;
+        border-bottom: 1px solid #F7F9FB;
+      }
+      .btn{
+        margin-top:20px;
+        margin-bottom:20px;
+        text-align: center;
+        button{
+          margin-right:10px;
+          &:last-child{
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+

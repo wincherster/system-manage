@@ -1,0 +1,37 @@
+.role-staff-list-container {
+    > .body {
+      > .main {
+        display: flex;
+        flex-direction: column;
+        > .search-container {
+          height: 48px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          > .el-input {
+            > .el-input__inner {
+              height: 28px!important;
+            }
+            > .el-input__suffix {
+              > .el-input__suffix-inner {
+                .iconfont {}
+              }
+            }
+          }
+
+        }
+        > .table-container {
+          flex:1;
+        }
+      }
+      > .statistics {
+        height: 62px;
+        line-height: 62px;
+        padding: 0 14px;
+        border-top: 1px solid #F7F9FB;
+        font-family: "PingFangSC-Regular","微软雅黑";
+        font-size: 14px;
+        color: #243546;
+      }
+    }
+}

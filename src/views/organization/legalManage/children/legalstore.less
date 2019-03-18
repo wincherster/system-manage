@@ -1,0 +1,33 @@
+.legalstore-container {
+    > .body {
+      > .head {
+        > .title {
+          
+          display: flex;
+          max-width: 300px;
+  
+          div:first-of-type {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          div:last-of-type  {
+            width: 100px;
+          }
+        }
+      }
+      > .main {
+        overflow-y: auto;
+      }
+      > .statistics {
+        height: 62px;
+        line-height: 62px;
+        padding: 0 14px;
+        border-top: 1px solid #F7F9FB;
+        font-family: "PingFangSC-Regular","微软雅黑";
+        font-size: 14px;
+        color: #243546;
+      }
+    }
+  }

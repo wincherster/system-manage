@@ -1,0 +1,40 @@
+.timetask-outer {
+  height: 100%; // background-color:#eee;
+  display: flex;
+  flex-direction: column;
+  .top {
+    min-width: 600px;
+    height: 59px;
+    padding: 0 20px;
+    border-bottom: 1px solid #EFF7FC;
+    .search {
+      float: left;
+      margin: 20px 0 0 0;
+    }
+    .inquire-btn {
+      float: left;
+      margin: 20px 0 0 10px;
+    }
+    .newadd {
+      float: right;
+      margin: 20px 0 0 0;
+    }
+  }
+  .bottom {
+    flex: 1;
+    display: flex;
+    .table {
+      flex: 1;
+      height: 100%;
+      overflow: auto;
+      .table-inner {
+        width: 100%;
+        padding-top: 14px 20px 0;
+        .el-pagination {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

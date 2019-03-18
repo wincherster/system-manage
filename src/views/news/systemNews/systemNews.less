@@ -1,0 +1,172 @@
+#systemnews {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .empty {
+    width: 100%;
+    min-height: 360px;
+  }
+  .content {
+    flex: 1;
+    width: 100%;
+    min-width: 1230px;
+    overflow: auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    .el-row {
+      width: 100%;
+      flex: 1;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      @media screen and (max-width: 1840px) {
+        .el-col.el-col-8 {
+          width: 33.33%;
+          &:nth-child(-n +3) {
+            margin-top: 0;
+          }
+          &:nth-child(3n + 1) > .box {
+            right: auto;
+            margin-left: 0;
+          }
+          &:nth-child(3n + 2) > .box {
+            margin: 0 auto;
+          }
+          &:nth-child(3n) > .box {
+            margin-left: auto;
+            margin-right: 0;
+          }
+        }
+      }
+      @media screen and (min-width: 1840px) {
+        .el-col.el-col-8 {
+          width: 25%;
+          &:nth-child(-n +4) {
+            margin-top: 0;
+          }
+          &:nth-child(4n + 1) > .box {
+            right: auto;
+            margin-left: 0;
+          }
+          &:nth-child(4n + 2) > .box {
+            margin-left: auto;
+            margin-right: 1.5%;
+          }
+          &:nth-child(4n + 3) > .box {
+            margin-left: auto;
+            margin-right: 0.5%;
+          }
+          &:nth-child(4n) > .box {
+            margin-left: auto;
+            margin-right: 0;
+          }
+        }
+      }
+      .el-col.el-col-8 {
+        margin-top: 12px;
+        min-width: 394px;
+        height: 172px;
+        .box {
+          width: 98%;
+          height: 100%;
+          background: #FEFEFE;
+          border: 1px solid #E8EFF4;
+          box-shadow: 0 0 6px 0 rgba(33, 41, 50, 0.06);
+          border-radius: 6px;
+          padding: 20px;
+          position: relative;
+          .title {
+            height: 25px;
+            font-family: PingFangSC-Regular;
+            font-size: 18px;
+            color: #243546;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            .recall {
+              display: inline-block;
+              background: #9AABB8;
+              border-radius: 3px;
+              font-size: 12px;
+              color: #FFFFFF;
+              padding: 2px 6px;
+              height: 20px;
+              //margin:3px 0 0 4px;
+              vertical-align: middle;
+            }
+          }
+          .newMessage {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            transform: rotate(30deg);
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 0 0 1px #ff0703,1px 1px #cec9c7,-1px -1px #cba6a8,
+              0 0 1px #ff1b10;
+          }
+          .info {
+            margin-top: 10px;
+            width: 100%;
+            height: 70px;
+            word-break: break-all;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            font-size: 14px;
+            color: #34495E;
+            line-height: 22px;
+          }
+          .bottom {
+            margin-top: 5px;
+            height: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .left {
+              height: 100%;
+              width: 69%;
+              white-space: nowrap;
+              .sender {
+                display: inline-block;
+                width: 44%;
+                overflow: hidden;
+                vertical-align: top;
+                border-left: 1px solid rgba(157, 168, 178, 0.60);
+                margin-left: 4px;
+                padding-left: 8px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+            .right {
+              height: 100%;
+              > a {
+                font-size: 14px;
+                color: #0C9AFF;
+                letter-spacing: 0;
+                margin-right: 6px;
+                &:last-child {
+                  margin-right: 0;
+                }
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+  .tzx-pagination-container {
+    height: 70px;
+    padding: 0 20px;
+  }
+}

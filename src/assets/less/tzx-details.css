@@ -1,0 +1,92 @@
+/* 详情公共样式抽取 */
+.tzx-detail-container {}
+.tzx-detail-container .group {
+  display: flex;
+}
+.tzx-detail-container .group .title {
+  width: 153px;
+  min-width: 153px;
+  font-family: "PingFangSC-Regular", "微软雅黑";
+  font-size: 14px;
+  color: #AAB4BC;
+  letter-spacing: 0;
+  font-weight: 300;
+}
+.tzx-detail-container .group .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.tzx-detail-container .group .content .row {
+  display: flex;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.tzx-detail-container .group .content .row:last-child {
+  margin-bottom: 0;
+}
+.tzx-detail-container .group .content .row .col {
+  display: flex;
+  width: 344px;
+  min-width: 344px;
+  font-family: "PingFangSC-Regular", "微软雅黑";
+  font-size: 14px;
+  color: #576D7A;
+}
+.tzx-detail-container .group .content .row .col .label {
+  width: 114px;
+  min-width: 114px;
+}
+.tzx-detail-container .group .content .row .col .label.small {
+  width: 74px;
+  min-width: 74px;
+}
+.tzx-detail-container .group .content .row .col .value {
+  flex: 1;
+}
+.tzx-detail-container .group .content .row .col .value.nowrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tzx-detail-container .group .content .row .col .value.remark {
+  max-height: 80px;
+  overflow-y: auto;
+}
+.tzx-detail-container .group .content .row .col .value .cell {
+  display: inline-block;
+  width:230px;
+  min-width:230px;
+  max-width: 230px;
+}
+.tzx-detail-container .group .content .row .col .value .cell:nth-child(2) {
+  margin-left: 10px;
+}
+.tzx-detail-container .group .content .row .col .value .el-tag{
+  margin-right: 5px!important;
+  margin-bottom: 5px!important;
+}
+.tzx-detail-container .group .content .row .col.col2 {
+  width: 912px;
+  min-width: 912px;
+}
+.tzx-detail-container .split-line {
+  height: 1px;
+  margin: 30px 0;
+  border-top: 1px dashed #EAF1F6;
+}
+.tzx-detail-container .pl20 {
+  padding-left: 20px;
+}
+.tzx-detail-container .pr20 {
+  padding-right: 20px;
+}
+.tzx-slide-right-window-container .tzx-detail-container {
+  padding: 20px 0;
+}
+.tzx-slide-right-window-container .tzx-detail-container .label {
+  margin-left:20px;
+}
+.tzx-slide-right-window-container .tzx-detail-container .value {
+  padding-right: 20px;
+}

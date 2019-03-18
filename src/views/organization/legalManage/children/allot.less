@@ -1,0 +1,58 @@
+.allot-container {
+  > .body {
+    > .head {
+      > .title {
+        
+        display: flex;
+        max-width: 300px;
+
+        div:first-of-type {
+          flex: 1;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        div:last-of-type  {
+          width: 100px;
+        }
+      }
+    }
+    > .main {
+      display: flex;
+      flex-direction: column;
+      > .search-container {
+        height: 48px;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #F7F9FB;
+        > .el-input {
+          flex: 1;
+          > .el-input__inner {
+            height: 28px!important;
+          }
+          > .el-input__suffix {
+            > .el-input__suffix-inner {
+              .iconfont {
+              }
+            }
+          }
+        }
+        > .iconfont {
+          font-size: 14px;
+          margin-right: 10px;
+          color: #939CA2;
+          cursor: pointer;
+          &:hover {
+            color: #108EE9;
+          }
+        }
+      }
+      > .tree-container {
+        flex: 1;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+    }
+  }
+}

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1512352666470" clover="3.2.0">
+  <project timestamp="1512352666471" name="All files">
+    <metrics statements="289" coveredstatements="47" conditionals="94" coveredconditionals="6" methods="205" coveredmethods="41" elements="588" coveredelements="94" complexity="0" loc="289" ncloc="289" packages="24" files="27" classes="27">
+      <package name="components">
+        <metrics statements="76" coveredstatements="17" conditionals="40" coveredconditionals="6" methods="23" coveredmethods="8"/>
+        <file name="fullscreen.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/components/fullscreen.vue">
+          <metrics statements="36" coveredstatements="9" conditionals="24" coveredconditionals="6" methods="8" coveredmethods="2"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="25" count="0" type="stmt"/>
+          <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="29" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="30" count="0" type="stmt"/>
+          <line num="31" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="32" count="0" type="stmt"/>
+          <line num="33" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="34" count="0" type="stmt"/>
+          <line num="37" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="38" count="0" type="stmt"/>
+          <line num="39" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="40" count="0" type="stmt"/>
+          <line num="41" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="42" count="0" type="stmt"/>
+          <line num="43" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="44" count="0" type="stmt"/>
+          <line num="49" count="0" type="stmt"/>
+          <line num="52" count="1" type="stmt"/>
+          <line num="53" count="1" type="cond" truecount="6" falsecount="0"/>
+          <line num="54" count="1" type="stmt"/>
+          <line num="55" count="1" type="stmt"/>
+          <line num="56" count="0" type="stmt"/>
+          <line num="57" count="0" type="stmt"/>
+          <line num="59" count="1" type="stmt"/>
+          <line num="60" count="0" type="stmt"/>
+          <line num="61" count="0" type="stmt"/>
+          <line num="63" count="1" type="stmt"/>
+          <line num="64" count="0" type="stmt"/>
+          <line num="65" count="0" type="stmt"/>
+          <line num="67" count="1" type="stmt"/>
+          <line num="68" count="0" type="stmt"/>
+          <line num="69" count="0" type="stmt"/>
+          <line num="71" count="1" type="stmt"/>
+        </file>
+        <file name="saasHeader.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/components/saasHeader.vue">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="65" count="1" type="stmt"/>
+          <line num="69" count="1" type="stmt"/>
+        </file>
+        <file name="saasNav.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/components/saasNav.vue">
+          <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+          <line num="52" count="1" type="stmt"/>
+          <line num="254" count="0" type="stmt"/>
+          <line num="255" count="0" type="stmt"/>
+          <line num="256" count="0" type="stmt"/>
+        </file>
+        <file name="saasTabBar.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/components/saasTabBar.vue">
+          <metrics statements="34" coveredstatements="5" conditionals="16" coveredconditionals="0" methods="11" coveredmethods="3"/>
+          <line num="35" count="1" type="stmt"/>
+          <line num="37" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="38" count="0" type="stmt"/>
+          <line num="40" count="0" type="stmt"/>
+          <line num="45" count="1" type="stmt"/>
+          <line num="48" count="1" type="stmt"/>
+          <line num="56" count="0" type="stmt"/>
+          <line num="57" count="0" type="stmt"/>
+          <line num="60" count="0" type="stmt"/>
+          <line num="62" count="0" type="stmt"/>
+          <line num="63" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="64" count="0" type="stmt"/>
+          <line num="66" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="67" count="0" type="stmt"/>
+          <line num="68" count="0" type="stmt"/>
+          <line num="70" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="71" count="0" type="stmt"/>
+          <line num="72" count="0" type="stmt"/>
+          <line num="74" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="75" count="0" type="stmt"/>
+          <line num="76" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="77" count="0" type="stmt"/>
+          <line num="83" count="2" type="stmt"/>
+          <line num="84" count="2" type="stmt"/>
+          <line num="85" count="0" type="stmt"/>
+          <line num="86" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="87" count="0" type="stmt"/>
+          <line num="90" count="0" type="stmt"/>
+          <line num="91" count="0" type="stmt"/>
+          <line num="97" count="0" type="stmt"/>
+          <line num="98" count="0" type="stmt"/>
+          <line num="100" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="101" count="0" type="stmt"/>
+          <line num="103" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.home">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="index.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/home/index.vue">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="10" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.organization.brandManage">
+        <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <file name="brandManage.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/organization/brandManage/brandManage.vue">
+          <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="22" count="0" type="stmt"/>
+          <line num="25" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.organization.brandManage.children">
+        <metrics statements="14" coveredstatements="1" conditionals="8" coveredconditionals="0" methods="8" coveredmethods="2"/>
+        <file name="editBrandManage.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/organization/brandManage/children/editBrandManage.vue">
+          <metrics statements="14" coveredstatements="1" conditionals="8" coveredconditionals="0" methods="8" coveredmethods="2"/>
+          <line num="65" count="1" type="stmt"/>
+          <line num="80" count="0" type="stmt"/>
+          <line num="81" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="84" count="0" type="stmt"/>
+          <line num="89" count="0" type="stmt"/>
+          <line num="92" count="0" type="stmt"/>
+          <line num="95" count="0" type="stmt"/>
+          <line num="96" count="0" type="stmt"/>
+          <line num="98" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="99" count="0" type="stmt"/>
+          <line num="101" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="102" count="0" type="stmt"/>
+          <line num="104" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="107" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.organization.legalManage">
+        <metrics statements="17" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="12" coveredmethods="2"/>
+        <file name="legalManage.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/organization/legalManage/legalManage.vue">
+          <metrics statements="17" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="12" coveredmethods="2"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="108" count="0" type="stmt"/>
+          <line num="111" count="0" type="stmt"/>
+          <line num="114" count="0" type="stmt"/>
+          <line num="115" count="0" type="stmt"/>
+          <line num="118" count="0" type="stmt"/>
+          <line num="122" count="0" type="stmt"/>
+          <line num="123" count="0" type="stmt"/>
+          <line num="127" count="0" type="stmt"/>
+          <line num="128" count="0" type="stmt"/>
+          <line num="131" count="0" type="stmt"/>
+          <line num="132" count="0" type="stmt"/>
+          <line num="136" count="0" type="stmt"/>
+          <line num="139" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="140" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="143" count="0" type="stmt"/>
+          <line num="151" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.organization.legalManage.children">
+        <metrics statements="15" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="2"/>
+        <file name="editLegalManage.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/organization/legalManage/children/editLegalManage.vue">
+          <metrics statements="15" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="2"/>
+          <line num="79" count="1" type="stmt"/>
+          <line num="134" count="0" type="stmt"/>
+          <line num="135" count="0" type="stmt"/>
+          <line num="136" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="137" count="0" type="stmt"/>
+          <line num="138" count="0" type="stmt"/>
+          <line num="139" count="0" type="stmt"/>
+          <line num="141" count="0" type="stmt"/>
+          <line num="142" count="0" type="stmt"/>
+          <line num="147" count="0" type="stmt"/>
+          <line num="148" count="0" type="stmt"/>
+          <line num="149" count="0" type="stmt"/>
+          <line num="152" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="153" count="0" type="stmt"/>
+          <line num="157" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.organization.organizaManage">
+        <metrics statements="8" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="1"/>
+        <file name="organizaManage.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/organization/organizaManage/organizaManage.vue">
+          <metrics statements="8" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="1"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="19" count="1" type="stmt"/>
+          <line num="26" count="0" type="stmt"/>
+          <line num="29" count="0" type="stmt"/>
+          <line num="32" count="0" type="stmt"/>
+          <line num="35" count="0" type="stmt"/>
+          <line num="38" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.organization.organizaManage.children.company">
+        <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="2"/>
+        <file name="editCompany.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/organization/organizaManage/children/company/editCompany.vue">
+          <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="2"/>
+          <line num="47" count="1" type="stmt"/>
+          <line num="73" count="0" type="stmt"/>
+          <line num="74" count="0" type="stmt"/>
+          <line num="75" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="76" count="0" type="stmt"/>
+          <line num="78" count="0" type="stmt"/>
+          <line num="83" count="0" type="stmt"/>
+          <line num="86" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.organization.organizaManage.children.distribution">
+        <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="2"/>
+        <file name="editDistribution.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/organization/organizaManage/children/distribution/editDistribution.vue">
+          <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="2"/>
+          <line num="66" count="1" type="stmt"/>
+          <line num="97" count="0" type="stmt"/>
+          <line num="98" count="0" type="stmt"/>
+          <line num="99" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="100" count="0" type="stmt"/>
+          <line num="102" count="0" type="stmt"/>
+          <line num="107" count="0" type="stmt"/>
+          <line num="110" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.organization.organizaManage.children.store">
+        <metrics statements="29" coveredstatements="0" conditionals="14" coveredconditionals="0" methods="61" coveredmethods="0"/>
+        <file name="editStore.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/organization/organizaManage/children/store/editStore.vue">
+          <metrics statements="29" coveredstatements="0" conditionals="14" coveredconditionals="0" methods="61" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="4" count="0" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+          <line num="10" count="0" type="stmt"/>
+          <line num="12" count="0" type="stmt"/>
+          <line num="14" count="0" type="stmt"/>
+          <line num="16" count="0" type="cond" truecount="0" falsecount="4"/>
+          <line num="18" count="0" type="stmt"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="78" count="0" type="stmt"/>
+          <line num="80" count="0" type="stmt"/>
+          <line num="81" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="82" count="0" type="stmt"/>
+          <line num="83" count="0" type="stmt"/>
+          <line num="84" count="0" type="stmt"/>
+          <line num="86" count="0" type="stmt"/>
+          <line num="87" count="0" type="stmt"/>
+          <line num="92" count="0" type="stmt"/>
+          <line num="93" count="0" type="stmt"/>
+          <line num="94" count="0" type="stmt"/>
+          <line num="97" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="98" count="0" type="stmt"/>
+          <line num="102" count="0" type="stmt"/>
+          <line num="105" count="0" type="stmt"/>
+          <line num="108" count="0" type="stmt"/>
+          <line num="397" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="398" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="399" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="400" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.organization.priceManage">
+        <metrics statements="21" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="14" coveredmethods="2"/>
+        <file name="priceManage.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/organization/priceManage/priceManage.vue">
+          <metrics statements="21" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="14" coveredmethods="2"/>
+          <line num="116" count="1" type="stmt"/>
+          <line num="122" count="1" type="stmt"/>
+          <line num="218" count="0" type="stmt"/>
+          <line num="221" count="0" type="stmt"/>
+          <line num="224" count="0" type="stmt"/>
+          <line num="228" count="0" type="stmt"/>
+          <line num="229" count="0" type="stmt"/>
+          <line num="233" count="0" type="stmt"/>
+          <line num="234" count="0" type="stmt"/>
+          <line num="237" count="0" type="stmt"/>
+          <line num="238" count="0" type="stmt"/>
+          <line num="242" count="0" type="stmt"/>
+          <line num="246" count="0" type="stmt"/>
+          <line num="249" count="0" type="stmt"/>
+          <line num="250" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="251" count="0" type="stmt"/>
+          <line num="252" count="0" type="stmt"/>
+          <line num="255" count="0" type="stmt"/>
+          <line num="259" count="0" type="stmt"/>
+          <line num="263" count="0" type="stmt"/>
+          <line num="267" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.organization.priceManage.children">
+        <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="2"/>
+        <file name="editPriceManage.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/organization/priceManage/children/editPriceManage.vue">
+          <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="2"/>
+          <line num="39" count="1" type="stmt"/>
+          <line num="58" count="0" type="stmt"/>
+          <line num="59" count="0" type="stmt"/>
+          <line num="60" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="61" count="0" type="stmt"/>
+          <line num="63" count="0" type="stmt"/>
+          <line num="68" count="0" type="stmt"/>
+          <line num="71" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.permission.personManage">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <file name="personManage.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/permission/personManage/personManage.vue">
+          <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="14" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.permission.personManage.children">
+        <metrics statements="15" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="2"/>
+        <file name="editPersonManage.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/permission/personManage/children/editPersonManage.vue">
+          <metrics statements="15" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="2"/>
+          <line num="88" count="1" type="stmt"/>
+          <line num="129" count="0" type="stmt"/>
+          <line num="130" count="0" type="stmt"/>
+          <line num="131" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="132" count="0" type="stmt"/>
+          <line num="133" count="0" type="stmt"/>
+          <line num="134" count="0" type="stmt"/>
+          <line num="136" count="0" type="stmt"/>
+          <line num="137" count="0" type="stmt"/>
+          <line num="142" count="0" type="stmt"/>
+          <line num="143" count="0" type="stmt"/>
+          <line num="144" count="0" type="stmt"/>
+          <line num="147" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="148" count="0" type="stmt"/>
+          <line num="152" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.permission.roleManage">
+        <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <file name="roleManage.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/permission/roleManage/roleManage.vue">
+          <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.permission.roleManage.children">
+        <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="2"/>
+        <file name="editRoleManage.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/permission/roleManage/children/editRoleManage.vue">
+          <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="2"/>
+          <line num="41" count="1" type="stmt"/>
+          <line num="61" count="0" type="stmt"/>
+          <line num="62" count="0" type="stmt"/>
+          <line num="63" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="64" count="0" type="stmt"/>
+          <line num="66" count="0" type="stmt"/>
+          <line num="71" count="0" type="stmt"/>
+          <line num="74" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.systemSetting.advancedSetting.storeSetting">
+        <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <file name="storeSetting.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/systemSetting/advancedSetting/storeSetting/storeSetting.vue">
+          <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.systemSetting.advancedSetting.storeSetting.children">
+        <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="2"/>
+        <file name="editStoreSetting.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/systemSetting/advancedSetting/storeSetting/children/editStoreSetting.vue">
+          <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="2"/>
+          <line num="38" count="1" type="stmt"/>
+          <line num="58" count="0" type="stmt"/>
+          <line num="59" count="0" type="stmt"/>
+          <line num="60" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="61" count="0" type="stmt"/>
+          <line num="63" count="0" type="stmt"/>
+          <line num="68" count="0" type="stmt"/>
+          <line num="71" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.systemSetting.cuisineMaint">
+        <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <file name="cuisineMaint.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/systemSetting/cuisineMaint/cuisineMaint.vue">
+          <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.systemSetting.cuisineMaint.children">
+        <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="2"/>
+        <file name="editCuisineMaint.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/systemSetting/cuisineMaint/children/editCuisineMaint.vue">
+          <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="2"/>
+          <line num="36" count="1" type="stmt"/>
+          <line num="55" count="0" type="stmt"/>
+          <line num="56" count="0" type="stmt"/>
+          <line num="57" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="58" count="0" type="stmt"/>
+          <line num="60" count="0" type="stmt"/>
+          <line num="65" count="0" type="stmt"/>
+          <line num="68" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.systemSetting.personPosition">
+        <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <file name="personPosition.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/systemSetting/personPosition/personPosition.vue">
+          <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.systemSetting.personPosition.children">
+        <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="2"/>
+        <file name="editPersonPosition.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/systemSetting/personPosition/children/editPersonPosition.vue">
+          <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="2"/>
+          <line num="36" count="1" type="stmt"/>
+          <line num="55" count="0" type="stmt"/>
+          <line num="56" count="0" type="stmt"/>
+          <line num="57" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="58" count="0" type="stmt"/>
+          <line num="60" count="0" type="stmt"/>
+          <line num="65" count="0" type="stmt"/>
+          <line num="68" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.systemSetting.systemNotice">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <file name="systemNotice.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/systemSetting/systemNotice/systemNotice.vue">
+          <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="14" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="views.systemSetting.systemNotice.children">
+        <metrics statements="15" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="2"/>
+        <file name="editSystemNotice.vue" path="/Users/cuimengkai/Downloads/repositories/tzx/src/views/systemSetting/systemNotice/children/editSystemNotice.vue">
+          <metrics statements="15" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="7" coveredmethods="2"/>
+          <line num="71" count="1" type="stmt"/>
+          <line num="103" count="0" type="stmt"/>
+          <line num="104" count="0" type="stmt"/>
+          <line num="105" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="106" count="0" type="stmt"/>
+          <line num="107" count="0" type="stmt"/>
+          <line num="108" count="0" type="stmt"/>
+          <line num="110" count="0" type="stmt"/>
+          <line num="111" count="0" type="stmt"/>
+          <line num="116" count="0" type="stmt"/>
+          <line num="117" count="0" type="stmt"/>
+          <line num="118" count="0" type="stmt"/>
+          <line num="121" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="122" count="0" type="stmt"/>
+          <line num="126" count="0" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>

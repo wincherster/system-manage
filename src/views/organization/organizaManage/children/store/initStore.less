@@ -1,0 +1,60 @@
+.init-store-container {
+  .body {
+    .main {
+      display: flex;
+      flex-direction: column;
+      .tool-box {
+        width: 100%;
+        height: 30px;
+        overflow: hidden;
+        border-bottom: 1px solid #EFF7FC;
+        display: flex;
+        padding: 0 20px;
+        .iconfont {
+          line-height: 30px;
+          font-family: "PingFangSC-Regular", "微软雅黑";
+          font-size: 12px;
+          color: #34495E;
+          margin-right: 10px;
+          &::before {
+            margin-right: 5px;
+          }
+          &:hover {
+            color: #108EE9;
+            cursor: pointer;
+          }
+        }
+      }
+      .tree-container{
+        flex: 1;
+        width: 100%;
+        overflow: auto;
+      }
+    }
+    .opt {
+      height: 62px;
+      border-top: 1px solid #F7F9FB;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .el-button {
+        height: 28px;
+        padding: 0 14px !important;
+        border-radius: 3px;
+        font-family: "PingFangSC-Regular", "微软雅黑";
+        font-size: 12px;
+        color: #FFFFFF;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.kxBtn {
+          color: #34495E;
+        }
+        &.sxBtn {
+          background: #0C9AFF;
+        }
+      }
+    }
+  }
+}

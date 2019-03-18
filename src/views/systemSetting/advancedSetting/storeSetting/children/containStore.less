@@ -1,0 +1,53 @@
+.contain-store {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  .content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 340px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      background: rgba(240, 245, 249, 0.53);
+      height: 46px;
+      padding-left: 20px;
+      font-size: 14px;
+      color: #243546;
+      line-height: 46px;
+      .close{
+        position: absolute;
+        right: 15px;
+        top: 12px;
+        width: 22px;
+        height: 22px;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #B8C4CC;
+      }
+    }
+    .main {
+      flex:1;
+      overflow: auto;
+      .main-inner{
+        padding:20px 20px 0 20px;
+      }
+    }
+    .total{
+      background: rgba(240, 245, 249, 0.53);
+      height: 46px;
+      padding-left: 20px;
+      font-size: 14px;
+      color: #243546;
+      line-height: 46px;
+    }
+  }
+}

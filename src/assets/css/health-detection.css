@@ -1,0 +1,71 @@
+.health-detection .content .child-comp.box {
+    position: relative;
+    padding: 0 100px;
+    border-right: 1px solid #e2e9ef;
+    min-width: 400px;
+    box-sizing: border-box;
+    position: relative;
+  }
+.health-detection .content .child-comp.box::before {
+    content: "";
+    width: 1px;
+    height: 38px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: -1px;
+  }
+.health-detection .content .child-comp.box::after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: -1px;
+  }
+.health-detection .content .child-comp.box canvas {
+    width: 100%;
+  }
+.health-detection .content .child-comp.box h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    margin-top: -50px;
+    position: relative;
+    font-family: "PingFangSC-Regular";
+    font-size: 14px;
+    color: #34495e;
+    line-height: 16px;
+    text-align: center;
+  }
+.health-detection .content .child-comp.box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+  }
+.health-detection .content .child-comp.box ul li {
+    opacity: 0.7;
+    font-family: "PingFangSC-Regular";
+    font-size: 12px;
+    color: #34495e;
+    line-height: 12px;
+    padding: 2px 0;
+  }
+.health-detection .content .child-comp.box ul li div{
+    font-size: 12px;
+  }
+.health-detection .content .child-comp.box ul li .count {
+    font-family: "PingFangSC-Regular";
+    font-size: 14px;
+    color: #0c9aff;
+    line-height: 12px;
+  }
+.health-detection .content .child-comp.box ul li .count a {
+    color: #0c9aff;
+  }
+.health-detection .content .child-comp.box ul li .count a:hover{
+    color: #34495E;
+    text-decoration: underline;
+  }

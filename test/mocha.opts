@@ -1,0 +1,6 @@
+test/unit/tests
+--watch
+--recursive
+--reporter mochawesome
+--reporter-options reportDir=test/unit/tests/doc
+--compilers js:babel-core/register

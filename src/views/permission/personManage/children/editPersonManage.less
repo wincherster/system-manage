@@ -1,0 +1,111 @@
+.add-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  .add-header {
+    width: 100%;
+    height: 42px;
+    background: #FFFFFF;
+    padding: 10px 0 10px 16px;
+    h3 {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      color: #243546;
+      line-height: 22px;
+    }
+  }
+  .line {
+    width: 100%;
+    height: 10px;
+    opacity: 0.03;
+    background-image: linear-gradient(-180deg, #434C94 0%, #FFFFFF 100%);
+  }
+  .add-body {
+    flex: 1;
+    width: 100%;
+    position: relative;
+    .add-main {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      overflow: auto;
+      padding: 0 16px;
+      .form-container {
+        width: 100%;
+        background-color: #fff;
+        padding: 12px 0 32px 0;
+        border-bottom: 1px solid #EAF1F6;
+        .el-form .el-form-item .selectList {
+          background-color: #fff;
+          position: absolute;
+          top: 32px;
+          left: 0;
+          z-index: 1;
+          width: 100%;
+          max-height: 280px;
+          border: 1px solid #BDCCD7;
+          box-shadow: 0 3px 8px 0 #E8F1F7;
+          border-radius: 0 0 3px 3px;
+          padding: 8px 0;
+          overflow-y: auto;
+        }
+        .el-form .el-form-item .selectList li {
+          height: 32px;
+          line-height: 32px;
+          font-family: "PingFangSC-Regular", "微软雅黑";
+          font-size: 14px;
+          color: #34495E;
+          letter-spacing: 0;
+          cursor: pointer;
+          padding: 0 8px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .el-form .el-form-item .selectList li:hover {
+          background-color: #F2F6FB;
+        }
+        .el-form .el-form-item .selectList li span {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .el-form .el-form-item .selectList li span,
+        .el-form .el-form-item .selectList li .el-button {
+          font-family: "PingFangSC-Regular", "微软雅黑";
+          font-size: 14px;
+        }
+        .el-form .el-form-item .selectList li.create {
+          border-top: 1px solid #BDCCD7;
+        }
+      }
+      .button-box {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        .btn-box {
+          margin: 0 auto;
+          .el-button {
+            float: left;
+            margin: 0 5px;
+            height: 28px;
+            line-height: 28px;
+            padding: 0 14px;
+            font-size: 14px;
+            color: #34495E;
+            &.el-button--primary {
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+    }
+  }
+}
